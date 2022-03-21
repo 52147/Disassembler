@@ -6,10 +6,11 @@
 
 - Algorithms:
 
- - 0. input the instruction and current address
- - 1. program counter(current address) + 4 (the address of the next instruction)
- - 2. Use unsigned right shift operator to get MIPS fields.
- - 3. Check the format, if format R(op=0), print function(add, sub, or, slt) and register operands(rs, rt, rd).
+  - 1. input the instruction and current address
+  - 2. program counter(current address) + 4 (the address of the next instruction)
+  - 3. Use unsigned right shift operator to get MIPS fields.
+  - 4. 
+      - Check the format, if format R(op=0), print function(add, sub, or, slt) and register operands(rs, rt, rd).
       - If format I(op=1), print function(lw, sw), register operands(rs, rt) and constant/address.
       - Otherwise is branch instruction, print function(beq, bne), register operands(rs, rt) and branch address(shifted offset field left by 2).
- - 4. Return the address to let the next input instruction used.
+  - 5. Return the address to let the next input instruction used.
